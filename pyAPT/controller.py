@@ -338,7 +338,9 @@ class Controller(object):
       self.resume_end_of_move_messages()
     else:
       self.suspend_end_of_move_messages()
-
+    print("moving")
+    print(abs_pos_mm)
+    print(abs_pos_apt)
     movemsg = Message(message.MGMSG_MOT_MOVE_ABSOLUTE,data=params)
     self._send_message(movemsg)
 
