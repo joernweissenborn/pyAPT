@@ -18,7 +18,6 @@ def info(serial):
     print('\tController info:')
     labels=['S/N','Model','Type','Firmware Ver', 'Notes', 'H/W Ver',
             'Mod State', 'Channels']
-
     for idx,ainfo in enumerate(info):
       print('\t%12s: %s'%(labels[idx], bytes(ainfo)))
 

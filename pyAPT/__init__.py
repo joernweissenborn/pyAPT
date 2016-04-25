@@ -1,7 +1,7 @@
 from __future__ import absolute_import
 import pylibftdi
 
-from pyAPT import message, controller, mts50, prm1, z812b
+from pyAPT import message, controller, cr1_z7, mts50, prm1, z812b
 
 __version__ = "0.01"
 __author__ = "Shuning Bian"
@@ -14,6 +14,7 @@ Controller = controller.Controller
 MTS50 = mts50.MTS50
 Z812B = z812b.Z812B
 PRM1 = prm1.PRM1
+CR1_Z7 = cr1_z7.CR1_Z7
 OutOfRangeError = controller.OutOfRangeError
 
 _PRODUCT_IDS = pylibftdi.USB_PID_LIST
